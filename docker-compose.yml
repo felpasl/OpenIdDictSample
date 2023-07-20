@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  openidserver:
+    image: ${DOCKER_REGISTRY-}openidserver
+    build:
+      context: .
+      dockerfile: OpenIdServer/Dockerfile
+
+  openidapi:
+    image: ${DOCKER_REGISTRY-}openidapi
+    build:
+      context: .
+      dockerfile: OpenIdApi/Dockerfile
+
+
+  identityserverapi:
+    image: ${DOCKER_REGISTRY-}identityserverapi
+    build:
+      context: .
+      dockerfile: IdentityServerApi/Dockerfile
+
