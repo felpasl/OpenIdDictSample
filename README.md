@@ -16,3 +16,12 @@ API project that consumes the OpenIdServer using the OpenIddict client library.
 
 API project that consumes the OpenIdServer using the IdentityServer4.AccessTokenValidation library.
 
+## Running the projects
+
+Start the docker-compose file in the root of the repository. This will start the OpenIdServer and the OpenIdApi.
+
+```bash
+docker-compose up -f docker-compose.yml -f docker-compose.override.yml
+```
+
+Start the ConsoleClient project to test the OpenIdDict client library to consume the OpenIdServer and Api's.
