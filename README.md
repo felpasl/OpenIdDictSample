@@ -25,3 +25,9 @@ docker-compose up -f docker-compose.yml -f docker-compose.override.yml
 ```
 
 Start the ConsoleClient project to test the OpenIdDict client library to consume the OpenIdServer and Api's.
+
+## References
+
+https://github.com/openiddict/openiddict-core/
+https://github.com/openiddict/openiddict-samples/
+https://documentation.openiddict.com/guides/getting-started.html
